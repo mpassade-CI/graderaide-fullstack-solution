@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <title>Graderaide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="modal.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="app">
+      <section class="new-student">
+        <section class="new-student-header">
+          <h1>New Student</h1>
+        </section>
+        <section class="new-student-input-parent">
+          <section class="new-student-input-child">
+            <label for="new-student-name">Student Name</label>
+            <input type="text" class="new-student-name" name="new-student-name">
+          </section>
+          <section class="new-student-input-child">
+            <label for="new-student-course">Course</label>
+            <input type="text" class="new-student-course" name="new-student-course">
+          </section>
+          <section class="new-student-input-child">
+            <label for="new-student-term">Term</label>
+            <select class="new-student-term" name="new-student-term">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </section>
+        </section>
+        <section class="new-student-submit">
+          <button type="submit" class="new-student-button">Create New Student</button>
+        </section>
+      </section>
+      <section class="student-display">
+      </section>
+
+
+
+    <section class="modal" style="display: none">
+      <section class="overlay"></section>
+      <section class="modal_content">
+        <!-- Dynamic Section -->
+        <h1 class="name-header"></h1>
+        <section class="add-course">
+          <label for="new-course">New Course:</label>
+          <input type="text" name="new-course" class="new-course">
+        </section>
+        <section class="add-course">
+          <label for="new-term">New Term:</label>
+          <select class="new-term" name="new-term">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </section>
+        <section class="add-course">
+          <span>New Assignment</span>
+          <span>Grade</span>
+        </section>
+        <section class="add-assignment-grade">
+          <input type="text" name="new-assignment" class="new-assignment">
+          <input type="text" name="new-grade" class="new-grade">
+        </section>
+        <button class="add-row-btn">+ Add Row</button>
+        <button type="submit" class="submit-new-course">Submit</button>
+        <!-- End of Dynamic Section -->
+        <button title="Close" class="close_modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </section>
+    </section>
+
+
+
+
+    </section>
+    <script src="create-student.js"></script>
+    <script src="backend.js"></script>
+    <script src="modal.js"></script>
+    <script src="error.js"></script>
+  </body>
+</html>

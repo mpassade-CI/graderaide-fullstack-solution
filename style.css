@@ -1,0 +1,66 @@
+.new-student {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.new-student-header {
+    height: 100px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.new-student-input-parent {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new-student-input-child {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    font-size: 20px;
+}
+.new-student-term, .new-term, .term-selection {
+    width: 40px;
+}
+.new-student-submit {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+}
+.new-student-button {
+    font-size: 13px;
+}
+p {
+    color: red;
+    text-align: center;
+}
+.student-display {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.course-btns {
+    margin-bottom: 5px;
+}
+.add-course-btn, .edit-course-btn, .remove-course-btn,
+.delete-student-btn {
+    font-size: 11px;
+}
+
